@@ -104,4 +104,39 @@ public class FuncoesUri {
         
     }
     
+    public static void Uri1007(){
+        
+        int a, b, c, d, diferenca;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        a = ler.nextInt();
+        b = ler.nextInt();
+        c = ler.nextInt();
+        d = ler.nextInt();
+                 
+        diferenca = ((a * b) - (c * d));
+        
+        System.out.println("DIFERENCA = "+diferenca);
+        
+    }
+    
+    public static void Uri1008(){
+        
+        double horasTrabalhadas, salarioHora, salarioTotal;
+        int numeroFuncionario;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        numeroFuncionario = ler.nextInt();
+        horasTrabalhadas = ler.nextDouble();
+        salarioHora = ler.nextDouble();
+        
+        salarioTotal = salarioHora * horasTrabalhadas;
+        
+        System.out.println("NUMBER = "+numeroFuncionario);
+        System.out.println("SALARY = U$ "+salarioTotal);
+        
+    }
+    
 }
