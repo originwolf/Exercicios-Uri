@@ -24,7 +24,7 @@ public class FuncoesUri {
         
         x = a + b;
         
-        System.out.println("X = "+x);
+        System.out.println("X = " + x);
         
     }
     
@@ -39,7 +39,7 @@ public class FuncoesUri {
         
         x = n * (Math.pow(raio, 2));
         
-        System.out.println("A="+x);
+        System.out.println("A=" + x);
         
     }
     
@@ -54,7 +54,7 @@ public class FuncoesUri {
         
         soma = a + b;
         
-        System.out.println("SOMA = "+soma);
+        System.out.println("SOMA = " + soma);
         
     }
     
@@ -69,7 +69,38 @@ public class FuncoesUri {
         
         prod = a * b;
         
-        System.out.println("PROD = "+prod);
+        System.out.println("PROD = " + prod);
+        
+    }
+    
+    public static void Uri1005(){
+        
+        double x, y, media;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        y = ler.nextDouble();
+        x = ler.nextDouble();
+
+        media = ((y * 3.5) + (x * 7.5)) / 11;
+        
+        System.out.println("MEDIA = " + media);
+       
+    }
+    
+    public static void Uri1006(){
+        
+        double a, b, c, media;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        a = ler.nextDouble();
+        b = ler.nextDouble();
+        c = ler.nextDouble();
+        
+        media = ((a * 2) + (b * 3) + (c * 5)) / 10;
+        
+        System.out.println("MEDIA = " + media);
         
     }
     
