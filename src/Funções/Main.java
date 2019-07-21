@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package UriIniciante;
+package Funções;
 
 import java.util.Scanner;
 
@@ -11,20 +11,11 @@ import java.util.Scanner;
  *
  * @author pedri
  */
-public class Uri1001 {
+public class Main extends FuncoesUri{
     
     public static void main(String[] args) {
         
-        int a, b, x;
-        
-        Scanner ler = new Scanner(System.in);
-        
-        a = ler.nextInt();
-        b = ler.nextInt();
-        
-        x = a + b;
-        
-        System.out.println("X = "+x);
+        Uri1004();
         
     }
     
