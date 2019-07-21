@@ -6,6 +6,7 @@
 package Funções;
 
 import java.util.Scanner;
+import java.lang.String;
 
 /**
  *
@@ -136,6 +137,45 @@ public class FuncoesUri {
         
         System.out.println("NUMBER = "+numeroFuncionario);
         System.out.println("SALARY = U$ "+salarioTotal);
+        
+    }
+    
+    public static void Uri1009(){
+        
+        String nomeVendedor;
+        double salarioFixo, vendasEfetuadas, comissao, salarioTotal;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        nomeVendedor = ler.nextLine();
+        salarioFixo = ler.nextDouble();
+        vendasEfetuadas = ler.nextDouble();
+        
+        comissao = (vendasEfetuadas * 15) / 100;
+        
+        salarioTotal = comissao + salarioFixo;
+        
+        System.out.printf("TOTAL = R$ %.2f",salarioTotal);
+        
+    }
+    
+    public static void Uri1010(){
+        
+        int codPeca1, numPeca1, codPeca2, numPeca2;
+        double valorPeca1, valorPeca2, totalConta;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        codPeca1 = ler.nextInt();
+        numPeca1 = ler.nextInt();
+        valorPeca1 = ler.nextDouble();
+        codPeca2 = ler.nextInt();
+        numPeca2 = ler.nextInt();
+        valorPeca2 = ler.nextDouble();
+        
+        totalConta = ((numPeca1 * valorPeca1) + (numPeca2 * valorPeca2));
+        
+        System.out.printf("VALOR A PAGAR: %.2f",totalConta);
         
     }
     
