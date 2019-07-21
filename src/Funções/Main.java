@@ -15,7 +15,7 @@ public class Main extends FuncoesUri{
     
     public static void main(String[] args) {
         
-        Uri1010();
+        Uri1012();
         
     }
     

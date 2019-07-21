@@ -155,7 +155,7 @@ public class FuncoesUri {
         
         salarioTotal = comissao + salarioFixo;
         
-        System.out.printf("TOTAL = R$ %.2f",salarioTotal);
+        System.out.printf("TOTAL = R$ %.2f\n",salarioTotal);
         
     }
     
@@ -175,7 +175,46 @@ public class FuncoesUri {
         
         totalConta = ((numPeca1 * valorPeca1) + (numPeca2 * valorPeca2));
         
-        System.out.printf("VALOR A PAGAR: %.2f",totalConta);
+        System.out.printf("VALOR A PAGAR: %.2f\n",totalConta);
+        
+    }
+    
+    public static void Uri1011(){
+        
+        double raio, volumeEsfera;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        raio = ler.nextDouble();
+        
+        volumeEsfera = ((4.0/3)*3.14159)*Math.pow(raio, 3);
+        
+        System.out.printf("VOLUME = %.3f\n",volumeEsfera);
+        
+    }
+    
+    public static void Uri1012(){
+        
+        double a, b, c;
+        double areaTriangulo, areaCirculo, areaTrapezio, areaQuadrado, areaRetangulo;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        a = ler.nextDouble();
+        b = ler.nextDouble();
+        c = ler.nextDouble();
+        
+        areaTriangulo = (a * c) / 2;
+        areaCirculo = 3.14159 * Math.pow(c, 2);
+        areaTrapezio = ((a + b) * c) / 2;
+        areaQuadrado = b*b;
+        areaRetangulo = a * b;
+        
+        System.out.printf("TRIANGULO %.3f\n",areaTriangulo);
+        System.out.printf("CIRCULO %.3f\n",areaCirculo);
+        System.out.printf("TRAPEZIO %.3f\n",areaTrapezio);
+        System.out.printf("QUADRADO %.3f\n",areaQuadrado);
+        System.out.printf("RETANGULO %.3f\n",areaRetangulo);
         
     }
     
