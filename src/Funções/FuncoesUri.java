@@ -218,4 +218,37 @@ public class FuncoesUri {
         
     }
     
+    public static void Uri1013(){
+        
+        double a, b, c, maiorab, maior;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        a = ler.nextDouble();
+        b = ler.nextDouble();
+        c = ler.nextDouble();
+        
+        maiorab = (a + b + Math.abs(a - b)) / 2;
+        
+        maior = (maiorab + c + Math.abs(maiorab - c)) / 2;
+        
+        System.out.printf("%.0f eh o maior\n",maior);
+        
+    }
+    
+    public static void Uri1014(){
+        
+        double distanciaPercorrida, gastoCombustivel, rendimento;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        distanciaPercorrida = ler.nextDouble();
+        gastoCombustivel = ler.nextDouble();
+        
+        rendimento = distanciaPercorrida / gastoCombustivel;
+        
+        System.out.printf("%.3f km/l\n",rendimento);
+        
+    }
+    
 }
