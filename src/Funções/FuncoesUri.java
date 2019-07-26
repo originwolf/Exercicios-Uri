@@ -251,4 +251,38 @@ public class FuncoesUri {
         
     }
     
+    public static void Uri1015(){
+        
+        double x1, x2, y1, y2, distancia;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        x1 = ler.nextDouble();
+        y1 = ler.nextDouble();
+        x2 = ler.nextDouble();
+        y2 = ler.nextDouble();
+        
+        distancia = Math.sqrt(Math.pow((x2 - x1), 2) + Math.pow((y2 - y1), 2));
+        
+        System.out.printf("%.4f\n",distancia);
+        
+    }
+    
+    public static void Uri1016(){
+        
+        double velocidadeX, velocidadeY, distancia, tempo;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        distancia = ler.nextDouble();
+        
+        velocidadeX = 60;
+        velocidadeY = 90;
+        
+        tempo = (60 * distancia) / 30;
+        
+        System.out.printf("%.0f minutos\n",tempo);
+        
+    }
+    
 }
