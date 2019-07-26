@@ -285,4 +285,118 @@ public class FuncoesUri {
         
     }
     
+    public static void Uri1017(){
+        
+        double tempoDeViagem, velocidadeMedia, distanciaPercorrida, gastoCombustivel;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        tempoDeViagem = ler.nextDouble();
+        velocidadeMedia = ler.nextDouble();
+        
+        distanciaPercorrida = tempoDeViagem * velocidadeMedia;
+        
+        gastoCombustivel = distanciaPercorrida / 12;
+        
+        System.out.printf("%.3f\n",gastoCombustivel);
+        
+    }
+    
+    public static void Uri1018(){
+        
+        int valor;
+        
+        Scanner ler = new Scanner(System.in);
+        
+        valor = ler.nextInt();
+        
+        System.out.printf("%d nota(s) de R$ 100,00\n",valor/100);
+        valor %= 100;
+        System.out.printf("%d nota(s) de R$ 50,00\n",valor/50);
+        valor %= 50;
+        System.out.printf("%d nota(s) de R$ 20,00\n",valor/20);
+        valor %= 20;
+        System.out.printf("%d nota(s) de R$ 10,00\n",valor/10);
+        valor %= 10;
+        System.out.printf("%d nota(s) de R$ 50,00\n",valor/5);
+        valor %= 5;
+        System.out.printf("%d nota(s) de R$ 2,00\n",valor/2);
+        valor %= 2;
+        System.out.printf("%d nota(s) de R$ 1,00\n",valor/1);
+        
+        /*
+        quantidade = valor / 100;
+        System.out.printf("%d nota(s) de R$ 100,00\n",quantidade);
+        sobra = valor%100;
+        valor = sobra;
+        
+        quantidade = valor / 50;
+        System.out.printf("%d nota(s) de R$ 50,00\n",quantidade);
+        sobra = valor%50;
+        valor = sobra;
+        
+        quantidade = valor / 20;
+        System.out.printf("%d nota(s) de R$ 20,00\n",quantidade);
+        sobra = valor%20;
+        valor = sobra;
+        
+        quantidade = valor / 10;
+        System.out.printf("%d nota(s) de R$ 10,00\n",quantidade);
+        sobra = valor%10;
+        valor = sobra;
+        
+        quantidade = valor / 5;
+        System.out.printf("%d nota(s) de R$ 5,00\n",quantidade);
+        sobra = valor%5;
+        valor = sobra;
+        
+        quantidade = valor / 2;
+        System.out.printf("%d nota(s) de R$ 2,00\n",quantidade);
+        sobra = valor%2;
+        valor = sobra;
+        
+        quantidade = valor / 1;
+        System.out.printf("%d nota(s) de R$ 1,00\n",quantidade);
+        sobra = valor%1;
+        */
+        
+        /*
+        notas100 = valor / 100;
+        sobra = valor%100;
+        valor = sobra;
+        
+        notas50 = valor / 50;
+        sobra = valor%50;
+        valor = sobra;
+        
+        notas20 = valor / 20;
+        sobra = valor%20;
+        valor = sobra;
+        
+        notas10 = valor / 10;
+        sobra = valor%10;
+        valor = sobra;
+        
+        notas5 = valor / 5;
+        sobra = valor%5;
+        valor = sobra;
+        
+        notas2 = valor / 2;
+        sobra = valor%2;
+        valor = sobra;
+        
+        notas1 = valor / 1;
+        sobra = valor%1;
+        
+        System.out.printf("%d nota(s) de R$ 100,00\n"
+                + "%d nota(s) de R$ 50,00\n"
+                + "%d nota(s) de R$ 20,00\n"
+                + "%d nota(s) de R$ 10,00\n"
+                + "%d nota(s) de R$ 5,00\n"
+                + "%d nota(s) de R$ 2,00\n"
+                + "%d nota(s) de R$ 1,00\n",notas100, notas50, notas20, notas10, notas5, notas2, notas1);
+        */
+        
+    }
+    
 }
